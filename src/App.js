@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import MovieDetail from 'MovieDetail';
-import 'MovieDetail.css'; // or './App.css'
-import 'App.css'; // <-- import the stylesheet
+import MovieDetail from './MovieDetail';
+import './MovieDetail.css'; // or './App.css'
+import './App.css'; // <-- import the stylesheet
 import { FilmRevival } from 'FilmRevival/indes';
 
 // Initialize GA
