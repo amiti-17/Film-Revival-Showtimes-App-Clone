@@ -4,3 +4,6 @@ Disallow:
 
 User-agent: facebookexternalhit
 Allow: /
+
+User-agent: Twitterbot
+Allow: /
