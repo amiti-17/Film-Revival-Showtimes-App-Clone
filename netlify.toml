@@ -5,3 +5,7 @@
 [dev]
   functions = "netlify/functions"
 
+[[redirects]]
+  from = "/movie/:id"
+  to = "/.netlify/functions/og-movie-page?id=:id"
+  status = 200
