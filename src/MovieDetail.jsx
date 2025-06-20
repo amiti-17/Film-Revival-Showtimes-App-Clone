@@ -72,11 +72,11 @@ function MovieDetail() {
         const data = await res.json();
         if (data.movie) {
           setMovie(data.movie);
-          document.querySelector('title').innerText = data.movie.title;
-          updateMetaTag("og:title", data.movie.title);
-          updateMetaTag("og:description", data.movie.synopsis || "See showtimes and details for this film in NYC.");
-          updateMetaTag("og:video:type", "video/mp4");
-          updateMetaTag("og:video", movie.trailers && movie.trailers.length > 0 && movie.trailers[0].trailer_files && movie.trailers[0].trailer_files[0].url.replace("watch?v=", "embed/"));
+          // document.querySelector('title').innerText = data.movie.title;
+          // updateMetaTag("og:title", data.movie.title);
+          // updateMetaTag("og:description", data.movie.synopsis || "See showtimes and details for this film in NYC.");
+          // updateMetaTag("og:video:type", "video/mp4");
+          // updateMetaTag("og:video", movie.trailers && movie.trailers.length > 0 && movie.trailers[0].trailer_files && movie.trailers[0].trailer_files[0].url.replace("watch?v=", "embed/"));
         } else {
           console.error("Failed to fetch movie details");
         }

@@ -1,0 +1,15 @@
+[build]
+  functions = "netlify/functions"
+  publish = "build"
+
+[dev]
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/movie/:id"
+  to = "/.netlify/functions/og-movie-page?id=:id"
+  status = 200
+
+[build.environment]
+  API_BASE = "https://api.internationalshowtimes.com/v4"
+  SHOWTIMES_API_KEY = "your_api_key_here"
