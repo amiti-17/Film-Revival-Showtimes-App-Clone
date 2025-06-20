@@ -18,7 +18,7 @@ const MovieLink = ({ movieId, state, children }) => {
       rel="noopener noreferrer"
       onClick={(e) => {
         e.preventDefault();
-        const win = window.open(`/movie/${movieId}`, '_blank');
+        const win = window.open(`/.netlify/functions/og-movie-page?id=${movieId}`, '_blank');
         if (win) {
           win.opener.movieState = state;
         }
