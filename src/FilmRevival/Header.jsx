@@ -1,5 +1,3 @@
-import { Helmet } from "react-helmet-async";
-
 export function Header (props) {
 
   const {isAdminMode} = props;

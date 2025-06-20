@@ -1,7 +1,7 @@
 // MovieDetail.jsx
 import React, { useEffect, useState } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 const API_KEY = process.env.REACT_APP_SHOWTIMES_API_KEY;
 const API_BASE = process.env.REACT_APP_API_BASE;
