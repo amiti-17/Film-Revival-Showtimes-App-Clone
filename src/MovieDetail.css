@@ -1,0 +1,77 @@
+.movie-detail {
+  /* Center the entire block on the page */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center; /* makes all text and elements center-aligned */
+}
+
+.movie-detail img.movie-poster {
+  /* Ensure the poster scales well and is centered */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+.showtimes-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.showtimes-list li {
+  margin: 0.8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.release-date {
+  font-style: italic;
+  color: #666;
+  margin: 0.5rem 0;
+  display: block; /* ensures it takes up full width */
+  text-align: center; /* keeps text centered */
+}
+
+/* Add a subtle separator between title and release date */
+.movie-detail h2 + .release-date {
+  border-top: 1px solid #eee;
+  padding-top: 0.5rem;
+}
+
+/* Add these styles to MovieDetail.css */
+.action-buttons {
+  display: inline-flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.action-button {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.booking-link {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.booking-link:hover {
+  background-color: #45a049;
+}
+
+.calendar-link {
+  background-color: #2196F3;
+  color: white;
+}
+
+.calendar-link:hover {
+  background-color: #1976D2;
+}
