@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CalendarView from "FilmRevival/CalendarView";
+import CalendarView from "./CalendarView";
 import { Header } from "./Header";
 import { LoadingProgress } from "./LoadingProgress";
 

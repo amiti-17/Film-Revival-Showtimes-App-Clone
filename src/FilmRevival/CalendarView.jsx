@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
-import { THEATERS } from 'constants';
-import { formatMovieTitle } from 'utils/titleFormatting';
-import { THEATER_LOCATIONS } from 'constants';
-import { CACHE_DURATION } from 'constants';
-import { BATCH_SIZE } from 'constants';
-import { LOCATIONS } from 'constants';
+import { THEATERS } from '../constants';
+import { formatMovieTitle } from '../utils/titleFormatting';
+import { THEATER_LOCATIONS } from '../constants';
+import { CACHE_DURATION } from '../constants';
+import { BATCH_SIZE } from '../constants';
+import { LOCATIONS } from '../constants';
 
 const API_KEY = process.env.REACT_APP_SHOWTIMES_API_KEY;
 const API_BASE = process.env.REACT_APP_API_BASE;

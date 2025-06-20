@@ -1,4 +1,4 @@
-import { UPPERCASE_THEATER_IDS } from "constants";
+import { UPPERCASE_THEATER_IDS } from "../constants";
 
 // Function to properly format movie titles
 export function formatMovieTitle(title, theaterId) {

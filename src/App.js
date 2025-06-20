@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MovieDetail from './MovieDetail';
 import './MovieDetail.css'; // or './App.css'
 import './App.css'; // <-- import the stylesheet
-import { FilmRevival } from 'FilmRevival/indes';
+import { FilmRevival } from './FilmRevival';
 
 // Initialize GA
 const TRACKING_ID = "G-WWNQX4K009";
