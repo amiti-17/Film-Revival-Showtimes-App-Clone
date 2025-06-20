@@ -46,22 +46,6 @@ function MovieDetail() {
   const [movie, setMovie] = useState(null);
   const [showtimes, setShowtimes] = useState([]);
 
-
-
-  function updateMetaTag(property, content, attr = 'property') {
-    let element = document.querySelector(`meta[${attr}="${property}"]`);
-
-    if (element) {
-      element.setAttribute("content", content);
-    } else {
-      element = document.createElement("meta");
-      element.setAttribute(attr, property);
-      element.setAttribute("content", content);
-      document.head.appendChild(element);
-    }
-  }
-
-
   useEffect(() => {
 
     async function fetchMovieDetails() {
@@ -72,11 +56,7 @@ function MovieDetail() {
         const data = await res.json();
         if (data.movie) {
           setMovie(data.movie);
-          // document.querySelector('title').innerText = data.movie.title;
-          // updateMetaTag("og:title", data.movie.title);
-          // updateMetaTag("og:description", data.movie.synopsis || "See showtimes and details for this film in NYC.");
-          // updateMetaTag("og:video:type", "video/mp4");
-          // updateMetaTag("og:video", movie.trailers && movie.trailers.length > 0 && movie.trailers[0].trailer_files && movie.trailers[0].trailer_files[0].url.replace("watch?v=", "embed/"));
+          document.querySelector('title').innerText = data.movie.title;
         } else {
           console.error("Failed to fetch movie details");
         }
