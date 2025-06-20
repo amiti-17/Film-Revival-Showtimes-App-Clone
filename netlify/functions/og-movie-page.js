@@ -95,6 +95,7 @@ exports.handler = async (event) => {
     }
 
     const title = movie.title;
+    console.log({title})
     const description = movie.synopsis || "See showtimes and details for this film in NYC.";
     const trailer = movie.trailers?.[0]?.trailer_files?.[0]?.url || '';
     const image = movie.poster;
