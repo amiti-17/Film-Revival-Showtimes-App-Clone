@@ -71,7 +71,8 @@ function MovieDetail() {
       setShowtimes(state.showtimes);
     }
 
-    fetchMovieDetails();
+    fetchMovieDetails();const longUrl = `/.netlify/functions/og-movie-page?id=${movieId}`;
+    window.history.replaceState(null, '', longUrl);
   }, [movieId, state]);
 
   // Group showtimes by date
